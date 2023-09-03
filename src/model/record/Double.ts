@@ -1,7 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
-import { Gender } from '../common';
-import { Player } from 'model/Player';
-import { Group } from 'model/Group';
+import { Player } from '../Player';
+import { Group } from '../Group';
 
 export interface Double {
   groupId: Group;

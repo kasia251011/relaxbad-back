@@ -1,5 +1,5 @@
-import { Participation } from 'model/common';
-import { Double } from 'model/record/Double';
+import { Participation } from '../common';
+import { Double } from '../record/Double';
 import mongoose, { Schema } from 'mongoose';
 
 export interface ParticipationDouble extends Participation {

@@ -1,5 +1,5 @@
-import { Game } from 'model/common';
-import { ParticipationDouble } from 'model/participation/ParticipationDouble';
+import { Game } from '../common';
+import { ParticipationDouble } from '../participation/ParticipationDouble';
 import mongoose, { Schema } from 'mongoose';
 
 export interface GameDouble extends Game {
