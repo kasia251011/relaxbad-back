@@ -3,6 +3,10 @@ import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import playerRoutes from './routes/Player';
+import groupRoutes from './routes/Group';
+import { initPlayers } from './data/players';
+import { initGroups } from './data/groups';
 
 dotenv.config()
 
@@ -24,13 +28,18 @@ database.once('connected', async () => {
       }
     console.log('Database Connected');
 
-    //here init some data
+    initPlayers();
+    console.log('Players initialized');
+    initGroups();
+    console.log('Groups initialized');
 })
 
 const app = express();
 
 app.use(cors())
 app.use(express.json());
+app.use('/players', playerRoutes);
+app.use('/groups', groupRoutes);
 
 app.listen(8080, () => {
     console.log(`Server Started at ${8080}`)

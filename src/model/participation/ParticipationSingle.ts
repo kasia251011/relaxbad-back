@@ -1,5 +1,5 @@
-import { Participation } from 'model/common';
-import { Single } from 'model/record/Single';
+import { Participation } from '../common';
+import { Single } from '../record/Single';
 import mongoose, { Schema } from 'mongoose';
 
 export interface ParticipationSingle extends Participation {
