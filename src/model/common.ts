@@ -9,6 +9,8 @@ export interface Game {
   court: string; //Change to Court
 }
 
-export type Gender = 'MAN' | 'WOMAN';
+export type Gender = "MAN" | "WOMAN";
 
-export type GroupType = 'SINGLE'|'MIX'|'DOUBLE';
+export type GroupType = "SINGLE" | "MIX" | "DOUBLE";
+
+export type Role = "ADMIN" | "JUDGE" | "PLAYER";

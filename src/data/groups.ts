@@ -27,3 +27,11 @@ export const initGroups = () => {
     }
   ])
 }
+
+const date = new Date();
+
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+
+const time = `${hours}:${minutes}:${seconds}`;
